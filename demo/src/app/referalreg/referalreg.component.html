@@ -1,0 +1,172 @@
+<div class="container-fluid">
+  <div class="card">
+
+<h2> Employee Form </h2>
+
+<form [formGroup]="reactiveForm">
+  
+      <div class="form-group row">
+        <label class="col-md-4 control-label">Candidate Name:</label>
+        <div class="col-md-7">
+        <input type="text" class="form-control" name="candidatename" id="candidatename" placeholder="Candidate Name" formControlName="candidatename">
+
+        <div
+        *ngIf="reactiveForm.controls.candidatename.errors && (reactiveForm.controls.candidatename.touched || reactiveForm.controls.candidatename.dirty)"
+        style="color:red">
+        <div *ngIf="reactiveForm.hasError('required','candidatename')"> Candidate Name is Required</div>
+        <div *ngIf="reactiveForm.hasError('pattern','candidatename')"> Candidate Name is invalid</div>
+        <div *ngIf="reactiveForm.hasError('minlength','candidatename')"> Candidate Name is must be 3 min</div>
+      </div>
+
+        </div>
+      </div>
+
+     <div class="form-group row">
+          <label class="col-md-4 control-label">Candidate Mobile No:</label>
+          <div class="col-md-7">
+          <input type="text" class="form-control" name="candidatemobile" id="candidatemobile" placeholder="Candidate Mobile Number" formControlName="candidatemobile">
+         
+          <div
+                        *ngIf="reactiveForm.controls.candidatemobile.errors && (reactiveForm.controls.candidatemobile.touched || reactiveForm.controls.candidatemobile.dirty)"
+                        style="color:red">
+                        <div *ngIf="reactiveForm.hasError('required','candidatemobile')"> Mobile Number is Required</div>
+                        <div *ngIf="reactiveForm.hasError('pattern','candidatemobile')"> Mobile Number is invalid</div>
+                        <div *ngIf="reactiveForm.hasError('minlength','candidatemobile')"> Mobile Number is must be 10 min
+                        </div>
+                        <div *ngIf="reactiveForm.hasError('maxlength','candidatemobile')"> Mobile Number is must be 14 max
+                        </div>
+
+                      </div>
+        
+        </div>
+        </div>
+ 
+        <div class="form-group row">
+            <label class="col-md-4 control-label">Candidate Email Id:</label>
+            <div class="col-md-7">
+            <input type="text" class="form-control" name="candidateemail" id="candidateemail" placeholder="Candidate Email Id" formControlName="candidateemail">
+           
+            <div
+            *ngIf="reactiveForm.controls.candidateemail.errors && (reactiveForm.controls.candidateemail.touched || reactiveForm.controls.candidateemail.dirty)"
+            style="color:red">
+            <div *ngIf="reactiveForm.hasError('required','candidateemail')"> Email is Required</div>
+            <div *ngIf="reactiveForm.hasError('pattern','candidateemail')"> Email is invalid</div>
+
+          </div>
+          
+          
+          </div>
+          </div>
+
+
+
+
+          <div class="form-group row">
+              <label class="col-md-4 control-label">Candidate Qualification:</label>
+              <div class="col-md-7">
+                  <select class="form-control" id="qua" formControlName="qua">
+                      <option *ngFor="let qua of quas" [value]="qua.id">{{qua.name}}</option>
+                    </select>
+      
+              </div>
+            </div>
+
+
+
+          <div class="form-group row">
+              <label class="col-md-4 control-label">Areas Of Intresting:</label>
+              <div class="col-md-7">
+               
+              <select class="form-control" id="board" formControlName="board">
+                        <option *ngFor="let board of boards" [value]="board.id">{{board.name}}</option>
+                      </select>
+
+              </div>
+            </div>
+
+            
+
+
+
+            <div class="form-group row">
+              <label class="col-md-4 control-label"> Intrested in : </label> <br>
+              <div class="col-md-7 mm">
+
+              <input type="radio" value="Male" formControlName="gender">
+              <label for="gender" style="color:blue" class="mm1">Train & Hire</label>
+             
+              <input type="radio" value="Female" formControlName="gender">
+              <label for="gender" style="color:blue" class="mm2">Normal</label>
+            
+              <div
+                *ngIf="reactiveForm.controls.gender.errors && (reactiveForm.controls.gender.touched || reactiveForm.controls.gender.dirty)">
+                <div *ngIf="reactiveForm.hasError('required','gender')"> gender is Required</div>
+              </div>
+            </div>
+            </div>
+
+
+
+            <div class="form-group row">
+                <label class="col-md-4 control-label">Refer By:</label>
+                <div class="col-md-7">
+                <input type="text" class="form-control" id="referby"name="referby" placeholder="Refer By" formControlName="referby">
+             
+                <div
+                *ngIf="reactiveForm.controls.referby.errors && (reactiveForm.controls.referby.touched || reactiveForm.controls.referby.dirty)"
+                style="color:red">
+                <div *ngIf="reactiveForm.hasError('required','referby')"> Name is Required</div>
+                <div *ngIf="reactiveForm.hasError('pattern','referby')"> Name is invalid</div>
+                <div *ngIf="reactiveForm.hasError('minlength','referby')"> Name is must be 3 min</div>
+              </div>
+                  
+              </div>
+              </div>
+
+
+              <div class="form-group row">
+                  <label class="col-md-4 control-label">Referal Email Id:</label>
+                  <div class="col-md-7">
+                  <input type="text" class="form-control" name="refemail" id="refemail" placeholder="Candidate Email Id" formControlName="refemail">
+                 
+                  <div
+                  *ngIf="reactiveForm.controls.refemail.errors && (reactiveForm.controls.refemail.touched || reactiveForm.controls.refemail.dirty)"
+                  style="color:red">
+                  <div *ngIf="reactiveForm.hasError('required','refemail')"> Email is Required</div>
+                  <div *ngIf="reactiveForm.hasError('pattern','refemail')"> Email is invalid</div>
+      
+                </div>
+                
+                
+                </div>
+                </div>
+
+
+
+              <div class="form-group row">
+                  <label class="col-md-4 control-label">Referal Mobile No:</label>
+                  <div class="col-md-7">
+                  <input type="text" class="form-control" id="refermobileno" name="refermobileno" placeholder="Mobile Number" formControlName="refermobileno">
+                 
+                
+                  <div
+                        *ngIf="reactiveForm.controls.refermobileno.errors && (reactiveForm.controls.refermobileno.touched || reactiveForm.controls.refermobileno.dirty)"
+                        style="color:red">
+                        <div *ngIf="reactiveForm.hasError('required','refermobileno')"> Mobile Number is Required</div>
+                        <div *ngIf="reactiveForm.hasError('pattern','refermobileno')"> Mobile Number is invalid</div>
+                        <div *ngIf="reactiveForm.hasError('minlength','refermobileno')"> Mobile Number is must be 10 min
+                        </div>
+                        <div *ngIf="reactiveForm.hasError('maxlength','refermobileno')"> Mobile Number is must be 14 max
+                        </div>
+
+                      </div>
+                
+                </div>
+                </div> 
+
+                <button class="btn btn-primary" (click)="registerUser(reactiveForm)">Submit</button>
+
+    </form>
+
+  </div>
+</div>

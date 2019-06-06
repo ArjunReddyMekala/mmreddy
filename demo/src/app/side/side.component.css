@@ -1,0 +1,89 @@
+.container{
+    margin-left: 25px;
+    min-width: 210vh;
+    background-color: whitesmoke; 
+    padding-top: 20px;
+    margin-bottom: 40px;  
+}
+
+img{
+   max-width: 20vh;
+    height: 50px;
+    font-family: Roboto,sans-serif;    
+}
+.blink{
+    -webkit-animation: blink 0.5s linear infinite;
+    -moz-animation: blink 0.5s linear infinite;
+    animation: blink 0.5s linear infinite;
+}
+.container1{
+    margin-left: -72px;
+}
+
+@-webkit-keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@-moz-keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+.JP img{
+    max-width: 100vh;
+    height: 250px;
+    margin-top: 50px;    
+}
+.central img{
+    max-width: 100vh;
+    height: 60px;  
+    margin-top: 50px;    
+}
+.booz img{
+    max-width: 100vh;
+    height: 60px;   
+   margin-top: 50px;    
+}
+.wipro img{
+    max-width: 100vh;
+    height: 60px;   
+    margin-top: 50px;    
+}
+.ups img{
+    max-width: 100vh;
+    height: 60px;  
+    margin-top: 50px;   
+}
+.infosys img{
+    max-width: 100vh;
+    height: 60px;  
+    margin-top: 50px;   
+}
+.deloit img{
+    max-width: 100vh;
+    height: 60px;  
+    margin-top: 50px;   
+}
+
+
+.row .register-form{
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.nav-link{
+    /*--------------------Innodata India Pvt. Ltd.-----------------------*/
+    display: block;
+    padding: 1px;
+    font-size: 12px;
+}
+.inf{
+    font-weight: 700;
+}

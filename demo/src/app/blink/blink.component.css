@@ -1,0 +1,37 @@
+.container{
+    /* background: #3ab1cf; */
+     /* margin-top: 20px;
+     margin-bottom: 20px; */
+     margin-left: 0px;  
+     min-width: 215.5vh;
+     /* background-color: whitesmoke; */
+     
+ }
+img{
+    width: 150vh;
+    height: 77px;
+    margin-top: 2px;
+    margin-bottom: 9px;
+    margin-left: 10px;
+}
+.blink{
+    -webkit-animation: blink 0.5s linear infinite;
+    -moz-animation: blink 0.5s linear infinite;
+    animation: blink 0.5s linear infinite;
+}
+@-webkit-keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@-moz-keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+

@@ -1,0 +1,91 @@
+<body>
+    <header>
+
+        <div class="banner">
+
+            <a class="nLogo">
+                <img src="/assets/logoo.png">
+            </a>
+
+            <p class="title">Tell us about yourself</p>
+        </div>
+
+
+        <div class="gnb">
+
+            <p style="color:white">Already Registered? <a routerLink="/auth/login" routerLinkActive="active"
+                    class="primary-link" title="Jobseeker Login" style="color:rgb(79, 17, 223)">Login</a> here</p>
+        </div>
+
+        <div id="alert" class="alert">
+            <i></i>
+            <span id="alertMsg"></span>
+        </div>
+    </header>
+    <div class="container">
+        <b class="job-text" style="color:white"> Find the right job on Sahiudhyog.com. You are only few steps away from
+            millions of jobs</b>
+        <form name="bifurcation" action="//my.naukri.com/account/register/basicdetails" method="post">
+
+            <div class="box">
+
+                <div class="fresherCont">
+
+                    <div class="icon fresher">
+                        <img src="/assets/fre.jpg">
+
+
+                    </div>
+
+                    <button type="button" routerLink="/fresher" routerLinkActive="active" value="fresher"
+                        name="userType" class="action-btn fresh" title="I am a Fresher">I am a Fresher</button>
+
+
+                </div>
+
+                <p class="description" style="color:white">I have just graduated/I haven't worked after graduation</p>
+
+            </div>
+
+
+            <div class="box">
+
+                <div class="expCont">
+
+                    <div class="icon experience">
+
+                        <img src="/assets/expi.png">
+
+
+                    </div>
+
+                    <button type="button" routerLink="/experience" routerLinkActive="active" name="userType" value="exp"
+                        class="action-btn exp" title="I am a Professional">I am a Professional</button>
+
+                </div>
+
+                <p class="description" style="color:white">I have at least 1 month of work experience</p>
+
+            </div>
+
+        </form>
+        <div class="info-text">
+            <span class="numbers" style="color:white">More than 3 lakhs Jobs <i></i> More than 1 lakh Recruiters</span>
+            <p class="head" style="color:rgb(37, 19, 204)">After you register, you can:</p>
+            <ul style="color:white">
+                <li>&#45; Apply to jobs from the site while keeping your resume hidden from all recruiters.</li>
+                <li>&#45; Mark yourself as a 'passive jobseeker' if you are not actively looking for a job.</li>
+                <li>&#45; Block your company or other specific companies from viewing your profile.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <a href="#" target="_blank" title="About Us">About Us</a>
+        <a href="#" target="_blank" title="Contact Us">Contact Us</a>
+        <a href="#" target="_blank" title="FAQs">FAQs</a>
+        <a href="#" target="_blank" title="Terms and Conditions">Terms and Conditions</a>
+        <a href="#" target="_blank" title="Report a Problem">Report a Problem</a>
+        <a href="#" target="_blank" title="Privacy Policy">Privacy Policy</a>
+        <p>All rights reserved &copy; 2019 Info Edge India Ltd.</p>
+    </footer>
+</body>

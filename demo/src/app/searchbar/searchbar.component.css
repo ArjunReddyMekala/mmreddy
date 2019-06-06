@@ -1,0 +1,116 @@
+
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 50px;
+    background-color: blue;
+    border-radius: 30px;
+    padding: 10px;
+    
+    }
+  
+    .search_input{
+    color: white;
+    border: none;
+    outline: none;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+  
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+  
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+  
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    margin-top: -5px;
+    }  
+  
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------
+    
+    .header{
+        height: 8vh;
+        width: 600px;
+        margin-left: 30px;
+     
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+    }
+
+   
+    .search-field{
+          
+        height: 20px;
+        padding: 15px;
+   
+    }
+    #search{
+        margin: 13px;
+        width: 365px;
+        margin-left: 2px;
+    }
+    .skills{
+        width: 200px;
+
+    }
+    .location{
+        width: 100px;
+    }
+
+    #location{
+        margin: 5px;
+    }
+    .search-btn{
+
+        height: 34px;
+        width: 75px;
+        margin-left: 20px;
+        background: #0eb6e9;
+        border: none;
+        color: #fff;
+
+    }
+
+    .search-btn:hover
+    {
+ 
+        background: #1d0fda;
+       cursor: pointer;       
+    }
+ 
+
+---------------------------------------------------*/
+
+

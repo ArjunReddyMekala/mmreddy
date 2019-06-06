@@ -1,0 +1,149 @@
+.menu-bar{
+    background: blue;
+    text-align: center;
+    height: 80px;
+}
+.navbar-brand img{ 
+    height: 60px;
+  margin-left: -50px;
+    border-radius: 100%;
+ }
+.menu-bar ul{
+    list-style: none;
+    display: inline-flex;
+    color: #fff;
+}
+.menu-bar ul li{
+    width: 150px;
+    margin: 15px;
+    padding: 8px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#id, .menu-bar ul li:hover{
+    background: #68b3ca;
+    border-radius: 3px;
+}
+.menu-bar .fa{
+    margin-right: 8px;
+}
+
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: #2a2d58;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;
+    
+}
+
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: #2a2d58;
+}
+
+/* --------------------------------------------------- */
+
+.header{
+    height: 50vh;
+   min-width: 100vh;
+  
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("/assets/pix.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+
+.search-field{
+      
+    height: 20px;
+    padding: 15px;
+
+}
+#search{
+    margin: 13px;
+    width: 365px;
+    margin-left: 100px;
+}
+.skills{
+    width: 200px;
+
+}
+.location{
+    width: 100px;
+}
+
+#location{
+    margin: 5px;
+}
+.search-btn{
+
+    height: 34px;
+    width: 75px;
+    margin-left: 20px;
+    background: #0eb6e9;
+    border: none;
+    color: #fff;
+
+}
+
+.search-btn:hover
+{
+
+    background: #1d0fda;
+   cursor: pointer;       
+}
+h1{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+
+
+
+
+
+

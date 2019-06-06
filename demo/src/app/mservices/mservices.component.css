@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700');
+
+.container{
+    margin-left: 40px;
+    min-width: 205vh;   
+}
+
+.imgContainer{
+margin-left: 20px;
+}
+.heading_tabs{
+    margin-left: 20px;
+}
+.text_style_tabs{
+    margin-left: 20px;
+}
+ #Services{   
+  margin-left: 550px;
+} 
+.register-form{
+           background-color: whitesmoke; 
+           margin-top: 20px;    
+}       
+.advance-career {
+           height: 61px;
+           font-family: Poppins;
+           font-size: 16px;
+           font-weight: 300;
+           font-style: normal;
+           font-stretch: normal;
+           line-height: 1.63;
+           letter-spacing: normal;
+           text-align: center;
+           color: #000000;
+}
+.mh_tabbtnwrap {
+           text-align: center;
+           height: 40px;
+}
+
+.mh_tabbtn:hover, .mh_tabbtn:active, .active, .mh_tabdatabtn:hover, .mh_tabdatabtn:active {
+           color: #ffffff !important;
+           background: blue !important;
+           font-weight: 300;
+}
+.mh_tabbtn {
+           font-size: 14px;
+           font-weight: 500;
+           font-style: normal;
+           font-stretch: normal;
+           line-height: 1.71;
+           letter-spacing: normal;
+           text-align: center;
+           color: #000000;
+           padding: 12px 10px;
+           text-decoration: none;
+           margin-left: 20px;
+           text-transform: uppercase;
+           background: #fff;
+           border: none;
+           width: 146px;
+}
+.mh_tabdatawrap {
+           margin-top: 30px;
+           max-height: 730px;
+}
+.tabcolumn.nomargin {
+           margin: 0 !important;
+}
+.heading_tabs {
+           font-size: 23px;
+           font-weight: 600;
+           font-style: normal;
+           font-stretch: normal;
+           line-height: 1.42;
+           letter-spacing: normal;
+           color: #000000;
+           text-align: left;
+           margin-top: 10px;
+}
+.text_style_tabs {
+           font-size: 16px;
+           font-weight: 300;
+           font-style: normal;
+           font-stretch: normal;
+           line-height: 1.63;
+           letter-spacing: normal;
+           color: #000000;
+           padding: 20px 0px;
+           height: 110px;
+           text-overflow: ellipsis;
+}
+.mh_tabdatabtn {
+           background: #fff;
+           border: 1px solid blue;
+           font-size: 14px;
+           font-weight: 400;
+           line-height: 1.71;
+           text-align: center;
+           color: blue;
+           padding: 10px 40px;
+           text-decoration: none;
+           text-transform: uppercase;
+           background: #fff;
+           font-stretch: normal;
+           letter-spacing: normal;
+           margin-bottom: 15px;
+           display: inline-block;
+           margin-left: 50px;
+}
+element.style {
+           display: block;
+}
+.tabcolumn {
+           width: 30%;
+           float: left;
+           margin-left: 45px;
+           padding: 10px 0px;
+}
+.tabcolumn.nomargin {
+           margin: 0 !important;
+}
+.clearifix {
+           clear: both;
+}
+       
+        
+       
+    
+   
+   /*-------Services------*/
+    /* #Services{
+        background-image:linear-gradient(rgba(33, 106, 224),rgba(33, 106, 224));
+      
+        background-size: cover;
+        background-position: center;
+        color:#efefef !important;
+        background-attachment: fixed;
+        padding-top: 8px;
+       
+        max-height: 636px;
+    }
+    #Services h1{
+        text-align: center;
+    
+        padding-bottom: 10px
+    }
+    #Services h1::after{
+      content: '';
+
+      display: block;
+      height: 3px;
+      width: 170px;
+      margin: 20px auto 5px;
+    }
+    .services{
+        margin-top: 40px;
+    }
+    .icon{
+        font-size: 40px;
+        margin: 20px auto;
+        padding: 8px;
+        height: 80px;
+        width: 80px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+    }
+    
+    #Services p{
+         font-size: 14px;
+         margin-top: 20px;
+         color: #ccc;
+    }
+     .services .col-md-3:hover{
+         background: #09bdeb;
+         cursor: pointer;
+         transition: 0.7s;
+     } */

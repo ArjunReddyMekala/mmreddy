@@ -1,0 +1,671 @@
+<div class="container">
+  <ngb-tabset #t="ngbTabset">
+    <ngb-tab id="tab-selectbyid1" title="Personal Details">
+      <ng-template ngbTabContent>
+
+        <div class="container register">
+
+          <form [formGroup]="reactiveForm">
+            <div class="row">
+              <div class="col-md-3 register-left">
+                <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+                <h3>Welcome</h3>
+                <p> <b>Sahiudhyog</b> </p>
+                <input type="submit" name="" value="Sahiudhyogh" style="color:rgb(236, 18, 164)" /><br />
+              </div>
+
+              <div class="col-md-9 register-right">
+
+                <div class="row register-form">
+                  <div class="col-md-6">
+
+                    <div class="form-group">
+                      <label for="firstName" style="color:blue"> First Name * </label>
+                      <input type="text" class="form-control" id="firstName" placeholder="Enter Your First Name"
+                        name="firstName" formControlName="firstName">
+                      <div
+                        *ngIf="reactiveForm.controls.firstName.errors && (reactiveForm.controls.firstName.touched || reactiveForm.controls.firstName.dirty)"
+                        style="color:red">
+                        <div *ngIf="reactiveForm.hasError('required','firstName')"> FirstName is Required</div>
+                        <div *ngIf="reactiveForm.hasError('pattern','firstName')"> FirstName is invalid</div>
+                        <div *ngIf="reactiveForm.hasError('minlength','firstName')"> FirstName is must be 3 min</div>
+                      </div>
+
+                    </div>
+
+                    <div class="form-group">
+                      <label for="lastName" style="color:blue"> LastName * </label>
+                      <input type="text" class="form-control" id="lastName" placeholder="Enter Your LastName"
+                        name="lastName" formControlName="lastName">
+                      <div
+                        *ngIf="reactiveForm.controls.lastName.errors && (reactiveForm.controls.lastName.touched || reactiveForm.controls.lastName.dirty)"
+                        style="color:red">
+                        <div *ngIf="reactiveForm.hasError('required','lastName')"> LastName is Required</div>
+                        <div *ngIf="reactiveForm.hasError('pattern','lastName')"> LastName is invalid</div>
+                        <div *ngIf="reactiveForm.hasError('minlength','lastName')"> LastName is must be 3 min</div>
+                      </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                      <label for="username" style="color:blue"> email * </label>
+                      <input type="email" class="form-control" id="username" placeholder="Enter Your email"
+                        name="username" formControlName="username">
+                      <div
+                        *ngIf="reactiveForm.controls.username.errors && (reactiveForm.controls.username.touched || reactiveForm.controls.username.dirty)"
+                        style="color:red">
+                        <div *ngIf="reactiveForm.hasError('required','username')"> email is Required</div>
+                        <div *ngIf="reactiveForm.hasError('pattern','username')"> email is invalid</div>
+
+                      </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                      <label for="password" style="color:blue"> password * </label>
+                      <input type="password" class="form-control" id="password" placeholder="Enter Your password"
+                        name="password" formControlName="password">
+                      <div
+                        *ngIf="reactiveForm.controls.password.errors && (reactiveForm.controls.password.touched || reactiveForm.controls.password.dirty)"
+                        style="color:red">
+                        <div *ngIf="reactiveForm.hasError('required','password')"> password is Required</div>
+                        <div *ngIf="reactiveForm.hasError('pattern','password')"> password is invalid</div>
+                        <div *ngIf="reactiveForm.hasError('minlength','password')"> password is must be 6 min</div>
+                        <div *ngIf="reactiveForm.hasError('maxlength','password')"> password is must be 10 max</div>
+                      </div>
+
+                    </div>
+
+
+                  </div>
+
+
+                  <div class="col-md-6">
+
+                    <div class="form-group">
+                      <label style="color:blue"> Gender * </label> <br>
+                      <label for="gender" style="color:blue">Male</label>
+                      <input type="radio" value="Male" formControlName="gender">
+                      <label for="gender" style="color:blue">Female</label>
+                      <input type="radio" value="Female" formControlName="gender">
+                      <label for="gender" style="color:blue">Others</label>
+                      <input type="radio" value="Others" formControlName="gender">
+                      <div
+                        *ngIf="reactiveForm.controls.gender.errors && (reactiveForm.controls.gender.touched || reactiveForm.controls.gender.dirty)">
+                        <div *ngIf="reactiveForm.hasError('required','gender')"> gender is Required</div>
+                      </div>
+                    </div>
+
+
+                    <div class="form-group">
+                      <label for="address" style="color:blue"> address * </label>
+                      <input type="text" class="form-control" id="address" placeholder="Enter Your address"
+                        name="address" formControlName="address">
+                      <div
+                        *ngIf="reactiveForm.controls.address.errors && (reactiveForm.controls.address.touched || reactiveForm.controls.address.dirty)"
+                        style="color:red">
+                        <div *ngIf="reactiveForm.hasError('required','address')"> address is Required</div>
+                        <div *ngIf="reactiveForm.hasError('minlength','address')"> address is must be 20 min</div>
+                        <div *ngIf="reactiveForm.hasError('maxlength','address')"> address is must be 250 max</div>
+
+
+                      </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+                      <label for="phoneNumber" style="color:blue"> phoneNumber * </label>
+                      <input type="text" class="form-control" id="phoneNumber" placeholder="Enter Your phoneNumber"
+                        name="phoneNumber" formControlName="phoneNumber">
+                      <div
+                        *ngIf="reactiveForm.controls.phoneNumber.errors && (reactiveForm.controls.phoneNumber.touched || reactiveForm.controls.phoneNumber.dirty)"
+                        style="color:red">
+                        <div *ngIf="reactiveForm.hasError('required','phoneNumber')"> phoneNumber is Required</div>
+                        <div *ngIf="reactiveForm.hasError('pattern','phoneNumber')"> phoneNumber is invalid</div>
+                        <div *ngIf="reactiveForm.hasError('minlength','phoneNumber')"> phoneNumber is must be 10 min
+                        </div>
+                        <div *ngIf="reactiveForm.hasError('maxlength','phoneNumber')"> phoneNumber is must be 14 max
+                        </div>
+
+                      </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+                      <label for="file" style="color:blue">Upload Resume</label>
+                      <input type="file" class="form-control" (change)="onSelectFile($event)" style="height:100%">
+                    </div>
+
+
+                    <p>
+                      <button class="btnm btn-primary" (click)="t.select('tab-selectbyid2')">Next</button>
+                    </p>
+
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+      </ng-template>
+    </ngb-tab>
+
+
+
+
+
+    <ngb-tab id="tab-selectbyid2">
+      <ng-template ngbTabTitle>Educational Details</ng-template>
+      <ng-template ngbTabContent>
+
+        <div class="container register">
+
+          <form [formGroup]="reactiveForm">
+
+
+            <div class="row">
+              <div class="col-md-2 register-left">
+                <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+                <h3>Welcome</h3>
+                <p> <b>Sahiudhyog</b> </p>
+                <input type="submit" name="" value="Sahiudhyogh" style="color:rgb(236, 18, 164)" /><br />
+              </div>
+
+              <div class="col-md-10 register-right">
+
+
+
+                <div class="row register-form" id="totalssc">
+
+
+                  <div class="col-md-12">
+                    <div class="form-group" id="board1" style="color:blue">
+                      <label>SSC Board *</label>
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="board"></label>
+                      <select class="form-control" id="board" formControlName="board">
+                        <option *ngFor="let board of boards" [value]="board.id">{{board.name}}</option>
+                      </select>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="ssc_percentage" placeholder="ssc%"
+                        name="ssc_percentage" formControlName="ssc_percentage">
+                      <div
+                        *ngIf="reactiveForm.controls.ssc_percentage.errors && (reactiveForm.controls.ssc_percentage.touched || reactiveForm.controls.ssc_percentage.dirty)"
+                        style="color: red">
+                        <div *ngIf="reactiveForm.hasError('required','ssc_percentage')"> ssc% is Required</div>
+                        <div *ngIf="reactiveForm.hasError('pattern','ssc_percentage')"> ssc% is invalid</div>
+                        <div *ngIf="reactiveForm.hasError('maxlength','ssc_percentage')"> invalid </div>
+                      </div>
+
+
+                    </div>
+
+                  </div>
+
+
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="ssc_school" placeholder="schoolName" name="ssc_school"
+                        formControlName="ssc_school">
+                      <div
+                        *ngIf="reactiveForm.controls.ssc_school.errors && (reactiveForm.controls.ssc_school.touched || reactiveForm.controls.ssc_school.dirty)"
+                        style="color: red">
+                        <div *ngIf="reactiveForm.hasError('required','ssc_school')"> schoolName is Required</div>
+                        <div *ngIf="reactiveForm.hasError('pattern','ssc_school')"> schoolName is invalid</div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="ssc_school_location" placeholder="location"
+                        name="ssc_school_location" formControlName="ssc_school_location">
+                      <div
+                        *ngIf="reactiveForm.controls.ssc_school_location.errors && (reactiveForm.controls.ssc_school_location.touched || reactiveForm.controls.ssc_school_location.dirty)"
+                        style="color: red">
+                        <div *ngIf="reactiveForm.hasError('required','ssc_school_location')"> location is Required</div>
+                        <div *ngIf="reactiveForm.hasError('pattern','ssc_school_location')"> schoolName is invalid</div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-5">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="ssc_passed_out_year" placeholder="Passed out Year"
+                        name="ssc_passed_out_year" formControlName="ssc_passed_out_year">
+                      <div
+                        *ngIf="reactiveForm.controls.ssc_passed_out_year.errors && (reactiveForm.controls.ssc_passed_out_year.touched || reactiveForm.controls.ssc_passed_out_year.dirty)"
+                        style="color: red">
+                        <div *ngIf="reactiveForm.hasError('required','ssc_passed_out_year')"> Year of pass is Required
+                        </div>
+                        <div *ngIf="reactiveForm.hasError('pattern','ssc_passed_out_year')"> year of pass is invalid
+                        </div>
+                        <div *ngIf="reactiveForm.hasError('minlength','ssc_passed_out_year')"> year of pass is invalid
+                        </div>
+                        <div *ngIf="reactiveForm.hasError('maxlength','ssc_passed_out_year')"> year of pass is invalid
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+
+                  <div class="col-md-5" id="sscupload">
+                    <div class="form-group">
+                      <label for="file" style="color:blue">Upload SSC</label>
+                      <input type="file" class="form-control" (change)="onSelectFile($event)">
+                    </div>
+                  </div>
+
+
+
+                </div>
+
+                <div class="row register1-form">
+
+
+
+                  <div class="col-md-12">
+                    <div class="form-group" id="inter_category1" style="color:rgb(240, 15, 191)">
+                      <label style="color:blue">IPE/Diploma *</label>
+                    </div>
+                  </div>
+
+
+
+
+
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="inter_category"></label>
+                      <select class="form-control" id="inter_category" formControlName="inter_category">
+                        <option *ngFor="let inter_category of inter_categories" [value]="inter_category.id">
+                          {{inter_category.name}}</option>
+                      </select>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="inter_percentage" placeholder="%"
+                        name="inter_percentage" formControlName="inter_percentage">
+                      <div
+                        *ngIf="reactiveForm.controls.inter_percentage.errors && (reactiveForm.controls.inter_percentage.touched || reactiveForm.controls.inter_percentage.dirty)"
+                        style="color: red">
+                        <div *ngIf="reactiveForm.hasError('required','inter_percentage')"> IPE/DIP% is Required</div>
+                        <div *ngIf="reactiveForm.hasError('pattern','inter_percentage')"> IPE/DIP% is invalid</div>
+                        <div *ngIf="reactiveForm.hasError('maxlength','inter_percentage')"> IPE/DIP% is must be 3max
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                  </div>
+
+
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="inter_school" placeholder="collegeName"
+                        name="inter_school" formControlName="inter_school">
+                      <div
+                        *ngIf="reactiveForm.controls.inter_school.errors && (reactiveForm.controls.inter_school.touched || reactiveForm.controls.inter_school.dirty)"
+                        style="color: red">
+                        <div *ngIf="reactiveForm.hasError('required','inter_school')"> collegeName is Required</div>
+                        <div *ngIf="reactiveForm.hasError('pattern','inter_school')"> collegeName is invalid</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="inter_school_location" placeholder="location"
+                        name="inter_school_location" formControlName="inter_school_location">
+                      <div
+                        *ngIf="reactiveForm.controls.inter_school_location.errors && (reactiveForm.controls.inter_school_location.touched || reactiveForm.controls.inter_school_location.dirty)"
+                        style="color: red">
+                        <div *ngIf="reactiveForm.hasError('required','inter_school_location')"> collegelocation is
+                          Required</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-5">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="inter_passed_out_year" placeholder="Passed out Year"
+                        name="inter_passed_out_year" formControlName="inter_passed_out_year">
+                      <div
+                        *ngIf="reactiveForm.controls.inter_passed_out_year.errors && (reactiveForm.controls.inter_passed_out_year.touched || reactiveForm.controls.inter_passed_out_year.dirty)"
+                        style="color: red">
+                        <div *ngIf="reactiveForm.hasError('required','inter_passed_out_year')"> Year of pass is Required
+                        </div>
+                        <div *ngIf="reactiveForm.hasError('pattern','inter_passed_out_year')"> year of pass is invalid
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+
+
+
+
+                  <div class="col-md-5" id="ipeupload">
+                    <div class="form-group">
+                      <label for="file" style="color:blue">Upload IPE/DIP</label>
+                      <input type="file" class="form-control" (change)="onSelectFile($event)">
+                    </div>
+                  </div>
+
+
+                </div>
+
+
+                <div class="row register2-form">
+
+                  <div class="col-md-12">
+                    <div class="form-group" id="anydegree" style="color:blue">
+                      <label>UG Degree *</label>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="ugCourse" style="color:blue"> Course:</label>
+                      <input type="text" class="form-control" id="ugCourse" placeholder="UG" name="ugCourse"
+                        formControlName="ugCourse">
+                      <div
+                        *ngIf="reactiveForm.controls.ugCourse.errors && (reactiveForm.controls.ugCourse.touched || reactiveForm.controls.ugCourse.dirty)"
+                        style="color:red">
+                        <div *ngIf="reactiveForm.hasError('required','ugCourse')">
+                          Course is Required
+                        </div>
+                        <div *ngIf="reactiveForm.hasError('pattern','ugCourse')">
+                          Course is Invalid Format
+                        </div>
+                        <div *ngIf="reactiveForm.hasError('minlength','ugCourse')">
+                          invalid
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                  <div class="col-md-4">
+
+                    <div class="form-group">
+                      <label for="ugSpecialization" style="color:blue"> Speciliazation:</label>
+                      <input type="text" class="form-control" id="ugSpecialization" name="ugSpecialization"
+                        formControlName="ugSpecialization">
+                      <div
+                        *ngIf="reactiveForm.controls.ugSpecialization.errors && (reactiveForm.controls.ugSpecialization.touched || reactiveForm.controls.ugSpecialization.dirty)"
+                        style="color:red">
+                        <div *ngIf="reactiveForm.hasError('required','ugSpecialization')">
+                          Speciliazation is Required
+                        </div>
+                        <div *ngIf="reactiveForm.hasError('pattern','ugSpecialization')">
+                          Speciliazation is Invalid Format
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4">
+
+                    <div class="form-group">
+                      <label for="university_or_institute" style="color:blue"> University:</label>
+                      <input type="text" class="form-control" id="university_or_institute"
+                        name="university_or_institute" formControlName="university_or_institute">
+                      <div
+                        *ngIf="reactiveForm.controls.university_or_institute.errors && (reactiveForm.controls.university_or_institute.touched || reactiveForm.controls.university_or_institute.dirty)"
+                        style="color:red">
+                        <div *ngIf="reactiveForm.hasError('required','university_or_institute')">
+                          university is Required
+                        </div>
+                        <div *ngIf="reactiveForm.hasError('pattern','university_or_institute')">
+                          university is Invalid Format
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+
+                    <div class="form-group">
+                      <label style="color:blue"> courseType * </label> <br>
+                      <label for="courseType" style="color:blue">Full Time</label>
+                      <input class="radio1" type="radio" value="Full Time" formControlName="courseType">
+                      <label for="courseType" style="color:blue">Part Time</label>
+                      <input class="radio1" type="radio" value="Part Time" formControlName="courseType">
+                      <label for="courseType" style="color:blue">Correspondece</label>
+                      <input class="radio1" type="radio" value="Correspondece" formControlName="courseType">
+                    </div>
+
+
+
+                  </div>
+
+
+
+
+
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="passed_out_year" style="color:blue"> Passed Out year:</label>
+                      <input type="text" class="form-control" id="passed_out_year" name="passed_out_year"
+                        formControlName="passed_out_year">
+                      <div
+                        *ngIf="reactiveForm.controls.passed_out_year.errors && (reactiveForm.controls.passed_out_year.touched || reactiveForm.controls.passed_out_year.dirty)"
+                        style="color:red">
+                        <div *ngIf="reactiveForm.hasError('required','passed_out_year')">
+                          Passed Out Year is Required
+                        </div>
+                        <div *ngIf="reactiveForm.hasError('pattern','passed_out_year')">
+                          university is Invalid Format
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+
+
+                  <div class="col-md-6">
+
+                    <div class="form-group">
+                      <label style="color:blue">Grading System *</label><br>
+                      <select class="form-control" id="gradingSystem" formControlName="gradingSystem">
+                        <option *ngFor="let gradingSystem of gradings" [value]="gradingSystem.id">{{gradingSystem.name}}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="marks" style="color:blue"> Marks:</label>
+                      <input type="text" class="form-control" id="marks" name="marks" formControlName="marks">
+                      <div
+                        *ngIf="reactiveForm.controls.marks.errors && (reactiveForm.controls.marks.touched || reactiveForm.controls.marks.dirty)"
+                        style="color:red">
+                        <div *ngIf="reactiveForm.hasError('required','marks')">
+                          Marks is Required
+                        </div>
+                        <div *ngIf="reactiveForm.hasError('pattern','marks')">
+                          invalid
+                        </div>
+                        <div *ngIf="reactiveForm.hasError('maxlength','marks')">
+                          invalid
+                        </div>
+
+                      </div>
+
+                    </div>
+
+
+                  </div>
+
+
+                  <div class="col-md-6">
+                    <div class="form-group" id="sa">
+                      <label for="file" style="color:blue">Upload Degree Certificate</label>
+                      <input type="file" class="form-control" (change)="onSelectFileGraduation($event)"
+                        style="height:100%">
+                    </div>
+
+                  </div>
+
+
+                  <!-- ----------------------------------------------------------- -->
+
+
+                  <!-- 
+<div class="form-group col-md-12">
+
+  <label  style="color:blue"> Type * </label> <br>
+</div>
+    <div class="form-group col-md-6">
+      
+
+      <label for="trainedornot"  style="color:blue">Trained</label>
+      <input class="radio1" type="radio" value="Trained" data-target="#imageGallery" data-toggle="collapse" formControlName="trainedornot"> -->
+                  <!-- ------------------------------------------------------------------ -->
+                  <!-- <div class="panel-body collapse in" id="imageGallery">
+    <div class="form-group">
+<input type="text" id="trained" class="form-control" name="trained" placeholder="Course" formControlName="trained">
+    </div>
+   <div class="form-group">
+<input type="text" id="institute" class="form-control" name="institute" placeholder="institute" formControlName="institute">
+  </div>
+   <div class="form-group">
+<input type="text" id="from" class="form-control" name="from" placeholder="From" formControlName="from">
+   </div>
+   <div class="form-group">
+<input type="text" id="to" class="form-control" name="to"placeholder="To" formControlName="from">
+  </div>
+   <div class="form-group"> 
+<input type="text" id="skillset" class="form-control" name="skillset" placeholder="Skill Set" formControlName="skillset">
+   </div>
+</div>
+
+    </div> -->
+
+                  <!-- ------------------------------------------------------------------------- -->
+                  <!-- <div class="form-group col-md-6">
+
+      <label for="trainedornot"  style="color:blue">Not Trained</label>
+      <input class="radio1" type="radio" value="Not Trained" data-target="#imageGallery1" data-toggle="collapse" formControlName="trainedornot"> -->
+                  <!-- ------------------------------------------------------------------------------------- -->
+
+                  <!-- <div class="panel-body collapse in" id="imageGallery1">
+    <div class="form-group">
+            <input type="text" id="ap" class="form-control" name="ap"
+                    placeholder="Acadamic Project" formControlName="ap">
+    </div>
+
+    <div class="form-group">
+            <input type="text" id="skillset" class="form-control" name="skillset"
+                    placeholder="Skill Set" formControlName="skillset">
+    </div>
+</div>
+
+
+   
+    </div> -->
+                  <!-- --------------------------------------------------------------------------------------- -->
+
+
+                </div>
+
+
+
+                <div class="row register3-form">
+                  <!-- ------------------------------------------- -->
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label style="color:blue"> Skills </label> <br>
+                      <input type="text" placeholder="Enter Your Skills" class="form-control" id="skills" name="skills"
+                        formControlName="skills" [(ngModel)]="model" [ngbTypeahead]="search" />
+
+                      <!----------------------
+                        <div
+                        *ngIf="reactiveForm.controls.skills.errors && (reactiveForm.controls.skills.touched || reactiveForm.controls.skills.dirty)"
+                        style="color:red">
+                      </div>
+                      ---------------------------------->
+
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="file" style="color:blue">Upload Skills Certificate</label>
+                      <input type="file" class="form-control" (change)="onSelectFileSkills($event)" style="height:100%">
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+
+                <button class="btnp btn-primary" (click)="t.select('tab-selectbyid1')">Previous</button>
+
+
+                <button type=submit class="btn1 btn-primary" (click)="registerUser(reactiveForm)"> Submit </button>
+
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </ng-template>
+    </ngb-tab>
+
+  </ngb-tabset>
+</div>

@@ -1,0 +1,128 @@
+/*---------Testimonials------------*/
+.container{
+   /* background: #3ab1cf; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25px;  
+    min-width: 210vh;
+    background-color: whitesmoke;
+    
+}
+#testimonials{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.container h1{
+    text-align: center;
+}
+#testimonials .row{
+    margin-top: 30px;
+}
+col-md-4{
+    margin: 40px auto;
+}
+.profile{
+    padding: 70px 10px 10px;
+    background-color: lavender;
+}
+.user{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile img{
+    top: -60px;
+    position: absolute;
+    border: 10px solid rgb(255, 255, 255);
+    left: calc(50% - 60px)
+   
+}
+.profile h3{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #007bff;
+}
+#testimonials span{
+    font-size: 12px;
+    color: #333;
+}
+ blockquote{
+     font-size: 16px;
+     line-height: 30px;
+ }
+ blockquote::before{
+     content: '\93';
+     font-size: 50px;
+     color: #007bff;
+     position: relative;
+     line-height: 20px;
+     bottom: -15px;
+     right: 5px;
+ }
+ blockquote::after{
+    content: '\94';
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    line-height: 10px;
+    bottom: -15px;
+    left: 5px;
+}
+.profile:hover{
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*--------------------------------------------------------------------------------------
+
+img{
+    width: 100px;
+    height: 90px;
+}
+.blink{
+    -webkit-animation: blink 0.5s linear infinite;
+    -moz-animation: blink 0.5s linear infinite;
+    animation: blink 0.5s linear infinite;
+
+}
+@-webkit-keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@-moz-keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.carousel-caption{
+    top: 30%;
+    transform: translateY(-50%);
+    bottom: initial !important;
+    background: rgba(11, 127, 221, 0.4);
+   
+   
+   
+    position: absolute !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.carousel-item{
+padding: 5px;
+}
+
+
+.btn{
+    margin-top: 5px;
+}
+----------------------------------------------------*/

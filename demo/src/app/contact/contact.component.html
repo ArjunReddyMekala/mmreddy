@@ -1,0 +1,78 @@
+<!--------------------------Get in Touch------------------------------>
+
+<div class="container">
+<section id="contact">
+    
+       <h3> Get In Touch</h3>
+       <div class="row">
+         <div class="col-md-6">
+            <form class="contact-form"  #f="ngForm" novalidate>
+              <div class="form-group">
+                 
+                  <input type="text" placeholder="Enter Your  Name" class="form-control"
+                    [(ngModel)]="model.firstName" #firstName="ngModel"
+                    [ngClass]="{'is-invalid':f.submitted && firstName.invalid}" name="firstName" required />
+                  <div class="invalid-feedback">
+                    <div>Your Name is Required</div>
+                  </div>
+              </div>
+              <div class="form-group">
+                  
+                  <input type="number" placeholder="Enter Your Mobile Number" class="form-control"
+                    [(ngModel)]="model.number" #number="ngModel"
+                    [ngClass]="{'is-invalid':f.submitted && number.invalid}" name="number" required />
+                  <div class="invalid-feedback">
+                    <div>Mobile Number is Required</div>
+                  </div>
+             </div>
+             <div class="form-group">
+                
+                <input type="text" placeholder="Enter Your Email" class="form-control" [(ngModel)]="model.email"
+                  #email="ngModel" [ngClass]="{'is-invalid':f.submitted && email.invalid}" name="email" required
+                  email />
+                <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                  <div *ngIf="email.errors.required">Email is Required</div>
+                  <div *ngIf="email.errors.email">Email must be a valid email adress</div>
+                </div>
+             </div>
+             <div class="form-group">
+               <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+             </div>
+             <button type="submit" class="btn btn-success">Send Message</button>
+            </form>
+         </div>
+         <div class="col-md-6 contact-info">
+
+            <div class="follow">
+              <b>Address:</b><i class="fa fa-map-marker"></i>
+             <!-----------------------------------
+               <pre class=" text-info">
+
+              Letsgettin - E-city Phase-2 ;
+                 17-B,2nd Floor,SBI Bank,
+                 Opp Tata power Solar,
+                 Hosur Road, Electronic city Phase-2 
+                  Bangalore : 560100.
+----------> 
+
+
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15560.220079494873!2d77.6617524!3d12.8397212!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf08d1f3e2bf90da8!2sLetsgettin+Pvt.+Ltd!5e0!3m2!1sen!2sin!4v1554100697145!5m2!1sen!2sin" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+<!------------
+  </pre>
+------------>
+
+  </div>
+           <div class="follow"><b>Phone:</b><i class="fa fa-phone"></i>+91-9876543210</div>  
+         <div class="follow"><b>Email:</b><i class="fa fa-envelope-o"></i>letsgettin@qubarter.com</div>
+         <div class="follow"><label><b>Get Social:</b></label>
+           <a href="#"><i class="fa fa-facebook"></i></a>
+           <a href="#"><i class="fa fa-youtube-play"></i></a>
+           <a href="#"><i class="fa fa-twitter"></i></a>
+           <a href="#"><i class="fa fa-google-plus"></i></a>
+       </div>
+         </div>
+       </div>
+   
+  </section>
+
+</div>

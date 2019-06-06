@@ -1,0 +1,22 @@
+.carousel-caption{
+    top: 30%;
+    transform: translateY(-50%);
+    bottom: initial !important;
+    background: rgba(11, 127, 221, 0.4);
+   
+   
+   
+    position: absolute !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.carousel-item{
+padding: 5px;
+}
+
+
+.btn{
+    margin-top: 5px;
+}

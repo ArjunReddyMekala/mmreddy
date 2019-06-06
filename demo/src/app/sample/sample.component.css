@@ -1,0 +1,278 @@
+.container{
+    background-color: whitesmoke;
+        margin-left: 40px;
+        min-width: 205vh;
+}
+.container1{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+img{
+    max-width: 20vh;
+     height: 50px;
+     font-family: Roboto,sans-serif; 
+     margin-left: -15px;   
+ }
+ .blink{
+     -webkit-animation: blink 0.5s linear infinite;
+     -moz-animation: blink 0.5s linear infinite;
+     animation: blink 0.5s linear infinite;
+ }
+ 
+ @-webkit-keyframes blink{
+     0%{opacity: 1;}
+     50%{opacity: 0;}
+     100%{opacity: 1;}
+ }
+ @-moz-keyframes blink{
+     0%{opacity: 1;}
+     50%{opacity: 0;}
+     100%{opacity: 1;}
+ }
+ @keyframes blink{
+     0%{opacity: 1;}
+     50%{opacity: 0;}
+     100%{opacity: 1;}
+ }
+ 
+ 
+ .JP img{
+     max-width: 100vh;
+     height: 250px;
+     margin-top: 50px;    
+ }
+ .central img{
+     max-width: 100vh;
+     height: 60px;  
+     margin-top: 50px;    
+ }
+ .booz img{
+     max-width: 100vh;
+     height: 60px;   
+    margin-top: 50px;    
+ }
+ .wipro img{
+     max-width: 100vh;
+     height: 60px;   
+     margin-top: 50px;    
+ }
+ .ups img{
+     max-width: 100vh;
+     height: 60px;  
+     margin-top: 50px;   
+ }
+ .infosys img{
+     max-width: 100vh;
+     height: 60px;  
+     margin-top: 50px;   
+ }
+ .deloit img{
+     max-width: 100vh;
+     height: 60px;  
+     margin-top: 50px;   
+ }
+ 
+ 
+ .row .register-form{
+   margin-top: 10px;
+   margin-left: 10px;
+ }
+
+ .inf{
+     font-weight: 700;
+ }
+ 
+
+
+ /* ----------------------------------- */
+
+
+ .blink{
+    -webkit-animation: blink 0.5s linear infinite;
+    -moz-animation: blink 0.5s linear infinite;
+    animation: blink 0.5s linear infinite;
+}
+@-webkit-keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@-moz-keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+
+
+
+
+ .premium{
+     margin-top: 30px;
+     color: aliceblue;
+     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("/assets/pix.jpg");
+     background-size: cover;
+     background-position: center;
+     display: flex;  
+     font-family: sans-serif;
+     margin-left: 33px;
+     margin-right: 26px;
+ }
+ .premium ul{
+     margin-top: 15px;
+ }
+ .register-form{
+   
+    margin-top: 20px;    
+}
+.nav-link{
+    font-size: 15px;
+    padding: 3px;
+   
+}
+
+/* -------------------------------- */
+.jobs-list-block {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    padding: 15px 0 14px 10px;
+    margin-bottom: 7px;
+    margin-left: -31px;
+}
+
+.heading-latest-block {
+    border-bottom: 1px solid #1e08e4;
+    padding-left: 1px;
+    
+}
+.heading-latest {
+    background-color: #5513f1;
+    padding: 15px 0 14px 10px;
+    width: 121px;
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+}
+  .display-inline {
+    display: inline-block;   
+}
+ .display-inline a{
+    margin: 5px;
+} 
+.nav-link{
+    color: black;
+}
+.nav-link:hover{
+    color: #1e08e4;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* -------------------------- */
+
+.wrapper {
+    width: 990px;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  
+  .profilePage .dashboard {
+    /* padding: 20px; */
+    min-height: 210px;
+    margin-left: -31px;
+  }
+  
+  .profilePage .dashboard .img-wrapper {
+    width: 60px;
+    padding: 0;
+    cursor: pointer;
+  }
+  .col.s2{
+    margin-left: auto;
+  }
+  
+  .profilePage .dashboard .user-img {
+    border-radius: 50%;
+    width: 84px;
+    height: 101px;
+    display: inline-block;
+    margin-left: -1830px;
+  }
+  
+  .center{
+    text-align: center;
+  }
+  
+  .profilePage .dashboard .icon.upload {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #fff;
+    padding: 3px 4px 5px 5px;
+    border-radius: 50%;
+    color: #4A90E2;
+    transition: .2s all;
+    width: 26px;
+    height: 26px;
+    line-height: 20px;
+    z-index: 9;
+    font-feature-settings: 'liga';
+      overflow: hidden;
+      margin-right: 858px;
+  }
+  .icon{
+    font-family: fontIcons;
+      display: inline-block;
+      vertical-align: middle;
+    
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: inherit;
+      text-transform: none;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+  }
+  .profilePage .dashboard .img-wrapper {
+    
+    cursor: pointer;
+  }
+
+  h2{
+    margin-top: -176px;
+    margin-left: 50px;
+    padding-bottom: 20px;
+    color: blue;
+  }
+  .start img{
+    float: right;
+    width: 183px;
+    height: 180px;
+    margin-top: 30px;
+    margin-right: 83px; 
+    min-width: 332px;
+    border-radius: 125px
+  }
+  h4{
+      margin-left: 50px;
+      margin-top: 50px;
+  }
+
+  .container10{
+      margin-left: 35px;
+  }
+
+
+  p{
+      margin-left: 50px;
+  }
+  .name{
+      margin-top: 20px;
+  }
+  

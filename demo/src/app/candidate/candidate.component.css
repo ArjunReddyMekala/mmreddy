@@ -1,0 +1,134 @@
+/*
+.total{
+    background-image: linear-gradient(rgba(125, 150, 224, 0.10),rgba(125, 150, 224, 0.10)),url("/assets/bag.jpg");
+    height: 100vh;
+    min-width: 100%;
+   background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       padding-top: 40px;
+}
+
+*/
+
+.searchbar{
+        margin-bottom: auto;
+        margin-top: auto;
+        height: 60px;
+        background-color: blue;
+        border-radius: 30px;
+        padding: 10px;
+        
+        }
+    
+.search_input{
+        color: white;
+        border: 0;
+        outline: 0;
+        background: none;
+        width: 0;
+        caret-color:transparent;
+        line-height: 40px;
+        transition: width 0.4s linear;
+        }
+    
+.searchbar:hover > .search_input{
+        padding: 0 10px;
+        width: 450px;
+        caret-color:red;
+        transition: width 0.4s linear;
+        }
+    
+.searchbar:hover > .search_icon{
+        background: white;
+        color: #e74c3c;
+        }
+    
+.search_icon{
+        height: 40px;
+        width: 40px;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color:white;
+        }  
+    
+       
+    /*--------------------------------
+    .active-purple input[type=text] {
+   
+    box-shadow: 0 1px 0 0 #ce93d8;
+    width: 500px;
+    margin-left: 250px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    }
+
+--------------------------------*/
+
+
+
+.container{
+    background-image: linear-gradient(rgba(125, 150, 224, 0.10),rgba(125, 150, 224, 0.10)),url("/assets/bag.jpg");
+    height: 100vh;
+    min-width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+}
+
+
+.row{  
+    width: 1000px;
+    height: 300px;
+    padding: 50px 50px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);  
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.row a{
+    margin-right: inherit;
+    font-size: 20px;
+    padding-top: inherit;
+    color: black;
+}
+.row i{
+    width: 26px;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+
+  }
+  
+.btn{
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#dropdownMenuButton{
+    width: 150px;
+    height: 52px;
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+    font-size: 20px;
+}
+.job{
+    padding-right: 55px;
+}
+#dropdownMenuButton i{
+    color: aliceblue;
+   
+}
+
+
+
+
+
+

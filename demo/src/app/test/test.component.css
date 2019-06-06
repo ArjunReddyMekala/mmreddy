@@ -1,0 +1,148 @@
+.container{
+    background-color: whitesmoke;
+        margin-left: 40px;
+        min-width: 205vh;
+}
+.container1{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+img{
+    max-width: 20vh;
+     height: 50px;
+     font-family: Roboto,sans-serif; 
+     margin-left: -15px;   
+ }
+ .blink{
+     -webkit-animation: blink 0.5s linear infinite;
+     -moz-animation: blink 0.5s linear infinite;
+     animation: blink 0.5s linear infinite;
+ }
+ 
+ @-webkit-keyframes blink{
+     0%{opacity: 1;}
+     50%{opacity: 0;}
+     100%{opacity: 1;}
+ }
+ @-moz-keyframes blink{
+     0%{opacity: 1;}
+     50%{opacity: 0;}
+     100%{opacity: 1;}
+ }
+ @keyframes blink{
+     0%{opacity: 1;}
+     50%{opacity: 0;}
+     100%{opacity: 1;}
+ }
+ 
+ 
+ .JP img{
+     max-width: 100vh;
+     height: 250px;
+     margin-top: 50px;    
+ }
+ .central img{
+     max-width: 100vh;
+     height: 60px;  
+     margin-top: 50px;    
+ }
+ .booz img{
+     max-width: 100vh;
+     height: 60px;   
+    margin-top: 50px;    
+ }
+ .wipro img{
+     max-width: 100vh;
+     height: 60px;   
+     margin-top: 50px;    
+ }
+ .ups img{
+     max-width: 100vh;
+     height: 60px;  
+     margin-top: 50px;   
+ }
+ .infosys img{
+     max-width: 100vh;
+     height: 60px;  
+     margin-top: 50px;   
+ }
+ .deloit img{
+     max-width: 100vh;
+     height: 60px;  
+     margin-top: 50px;   
+ }
+ 
+ 
+ .row .register-form{
+   margin-top: 10px;
+   margin-left: 10px;
+ }
+
+ .inf{
+     font-weight: 700;
+ }
+ 
+
+
+ /* ----------------------------------- */
+
+ .premium{
+     margin-top: 30px;
+     color: aliceblue;
+     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("/assets/pix.jpg");
+     background-size: cover;
+     background-position: center;
+     display: flex;  
+     font-family: sans-serif;
+ }
+ .premium ul{
+     margin-top: 15px;
+ }
+ .register-form{
+   
+    margin-top: 20px;    
+}
+.nav-link{
+    font-size: 15px;
+    padding: 3px;
+   
+}
+
+/* -------------------------------- */
+.jobs-list-block {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    padding: 15px 0 14px 10px;
+    margin-bottom: 7px;
+    margin-left: -31px;
+}
+
+.heading-latest-block {
+    border-bottom: 1px solid #1e08e4;
+    padding-left: 1px;
+    
+}
+.heading-latest {
+    background-color: #5513f1;
+    padding: 15px 0 14px 10px;
+    width: 121px;
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+}
+  .display-inline {
+    display: inline-block;   
+}
+ .display-inline a{
+    margin: 5px;
+} 
+.nav-link{
+    color: black;
+}
+.nav-link:hover{
+    color: #1e08e4;
+    cursor: pointer;
+    transition: 0.5s;
+}
+

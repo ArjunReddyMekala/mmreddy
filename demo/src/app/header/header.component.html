@@ -1,0 +1,143 @@
+
+<section id="nav-bar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <a class="navbar-brand" routerLink="/main"><img src="/assets/logoo.png"></a>
+     
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+  <!------------------------------SEARCH BAR HERE---------------------------------->
+          <app-searchbar></app-searchbar>
+
+
+        <ul class="navbar-nav ml-auto">
+         <!--------------------------------------------------------------------
+          <li class="nav-item">           
+            <a class="nav-link"routerLink="/main" routerLinkActive="active">Home </a>
+          </li>
+         ----------------------------------------------------------------------------->
+
+
+         <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-primary" type="button" id="dropdownMenuButton">
+                <i class="fa fa-home" aria-hidden="true"></i>
+              Home</button>
+                <!---------------------------------------------------
+            <div ngbDropdownMenu aria-labelledby="dropdownMenuButton">
+            
+              <button class="dropdown-item">Web Development</button>
+              <button class="dropdown-item">App Development</button>
+              <button class="dropdown-item">Digital Marketing</button>
+              <button class="dropdown-item">Pharma</button>
+           
+            </div>
+               ----------------------------------------------------->
+          </div>
+
+
+
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-primary" type="button" id="dropdownMenuButton">
+                <i class="fa fa-asterisk" aria-hidden="true"></i>
+              Jobs</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownMenuButton">
+              <button class="dropdown-item">Web</button>
+              <button class="dropdown-item">App</button>
+              <button class="dropdown-item">Digital</button>
+              <button class="dropdown-item">Pharma</button>
+            </div>
+
+          </div>
+
+
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-primary" type="button" id="dropdownMenuButton">
+                <i class="fa fa-asterisk" aria-hidden="true"></i>
+              Services</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownMenuButton">
+              <button class="dropdown-item">Web Development</button>
+              <button class="dropdown-item">App Development</button>
+              <button class="dropdown-item">Digital Marketing</button>
+              <button class="dropdown-item">Pharma</button>
+            </div>
+          </div>
+
+          
+
+
+        <!-------------------------------------------------------------
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/mservices" routerLinkActive="active">Services</a>
+          </li>
+
+        ---------------------------------------------->
+<!--------------------------------------------------------------------------
+          <li class="nav-item">
+              
+            <a class="nav-link" routerLink="/testimonails" routerLinkActive="active">Testimonails</a>
+          </li>
+
+------------------------------------------------------------------------------->
+
+          <div ngbDropdown class="d-inline-block">
+              <button class="btn btn-primary" type="button" id="dropdownMenuButton">
+                  <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                Blog</button>
+            </div>
+        
+
+
+
+
+          <!------------------------------------------------------------------------------------>
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-primary" type="button" id="dropdownMenuButton">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              Login/Register</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownMenuButton">
+              <button class="dropdown-item"><a routerLink="/auth/login" routerLinkActive="active">Jobseeker</a></button>
+              <button class="dropdown-item">Employeer</button>
+             
+            </div>
+          </div>
+
+<!-----------------------------------------------------------------------
+         
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/jobseeker" routerLinkActive="active">Jobseeker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#employeer">Employeer</a>
+            </li>
+
+---------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------
+            <li class="nav-item">
+                
+                <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact Us</a>
+              </li>
+
+        </ul>
+      </div>
+     </nav>  
+  </section>
+  -------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-primary" type="button" id="dropdownMenuButton">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+        Contact Us</button>
+    </div>
+-------------------------->
+
+
+  </ul>
+
+ 
+</div>
+</nav>  
+</section>
+

@@ -1,0 +1,84 @@
+.blink{
+    -webkit-animation: blink 0.5s linear infinite;
+    -moz-animation: blink 0.5s linear infinite;
+    animation: blink 0.5s linear infinite;
+}
+@-webkit-keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@-moz-keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.container{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+h3{
+    margin-top: 10px;
+    color: rgb(25, 111, 192);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ h6{
+    margin-top: 10px;
+    
+}
+.image{
+    float: right;
+     height: 245px; 
+}
+.image img{
+    width: 425px;
+    height: 220px;
+    margin-left: 100px;
+    border-radius: 100%;
+
+}
+.card{
+    display: block;
+    height: 41px;
+    padding-top: 5px;
+    padding-bottom: 47px;
+    background-color: coral;
+}
+.head{
+    color: coral;
+}
+.para{
+    margin-left: 10px;
+    font-size: 15px;
+    text-align: justify;
+    
+}
+.card .btn{
+    width:100px;
+    float: right;
+  
+    margin-top: -48px;
+    margin-right: 10px;
+}
+.card .pr{
+   margin-left: 25px;
+padding-top: 10px;
+font-size: 17px;
+color: cornsilk;
+}
+
+#demo{
+   margin-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    
+}
+#demo .a{
+    float: right;
+}

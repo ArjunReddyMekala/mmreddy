@@ -1,0 +1,62 @@
+@media only screen {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+.dropdown-menu{
+  max-width: 182px;
+}
+#ma i{
+  width: 26px;
+  float: left;
+  text-align: center;
+  margin-bottom: -35px;
+  margin-top: 8px;
+  color:blue;
+}
+
+  
+  
+  /*---navigation bar------*/
+  #nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+   }
+   .navbar-brand img{
+    border-radius: 50%;
+      height: 50px;
+      padding-left: 30px;
+   
+   }
+
+   
+   
+   .navbar-nav li{
+      padding: 0 10px;
+      
+   }
+   .navbar-nav li a{
+      float: right;
+      text-align: left;
+      color: white;
+    }
+    .navbar-nav li i{
+      width: 26px;
+      float: left;
+      text-align: center;
+      margin-top: 10px;
+  
+    }
+    
+
+
+    .navbar-toggler{
+        border: none!important;
+    }
+    .nav-link{
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+    }

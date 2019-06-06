@@ -1,0 +1,26 @@
+#carouselExampleControls{
+    background: url("/assets/M.jpg");
+   
+    min-width: 100%;
+}
+
+img{
+    max-width: 250vh;
+    max-height: 74.5vh;
+   
+}
+.carousel-caption{
+    top: 30%;
+    transform: translateY(-50%);
+    bottom: initial !important;
+    background: rgba(11, 127, 221, 0.4);
+    max-width: 600px;
+    position: absolute !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.btn{
+    margin-top: 5px;
+}

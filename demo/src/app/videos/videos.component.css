@@ -1,0 +1,14 @@
+.container{
+    background-color: whitesmoke;
+     margin-left: 25px;
+     min-width: 210vh;
+}  
+ #videos{   
+     padding-top: 20px;
+     padding-bottom: 10px;
+     margin-left: 450px;
+    color: blue;
+  }
+  .embed-responsive-item{
+    padding-bottom: 40px;
+  }  

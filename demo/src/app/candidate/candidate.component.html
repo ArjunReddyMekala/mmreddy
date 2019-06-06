@@ -1,0 +1,71 @@
+<app-canhead></app-canhead>
+
+<!-----------------------
+<body>
+  
+      <div class="container h-100">
+        
+        <div class="d-flex justify-content-center h-100">
+          <div class="searchbar">
+             
+            <input class="search_input" type="text" name="" placeholder="Key Skills Search here...">
+            <a href="#" class="search_icon"><i class="fa fa-search" aria-hidden="true"></i></a>
+          
+          </div>
+        </div>
+        
+      </div>
+
+
+</body>
+------------>
+
+<!-----------------------------------------
+  <app-namescroll></app-namescroll>
+
+
+----------->
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-md-3 bg">
+
+      <button class="btn btn-primary">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+        <a routerLink="/editprofile" routerLinkActive="active">Edit Profile</a> </button> <br><br>
+
+
+      <button class="btn btn-primary">
+        <i class="fa fa-comment-o" aria-hidden="true"></i>
+        <a [routerLink]="['Chatterbox']">Chatter Box</a> </button> <br><br>
+
+      <button class="btn btn-primary">
+        <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+        <a class="job" [routerLink]="['jobs']"> Jobs </a> </button><br> <br>
+
+
+
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" ngbDropdownToggle>
+          <i class="fa fa-cogs" aria-hidden="true"></i>
+          Settings</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownMenuButton">
+          <button class="dropdown-item">Change To Premium</button>
+          <button class="dropdown-item">Change Password</button>
+          <button class="dropdown-item">Logout</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+
+
+<app-subfooter></app-subfooter>

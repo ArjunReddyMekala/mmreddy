@@ -1,0 +1,146 @@
+body{
+    font-family:Roboto,sans-serif;
+    font-size:15px;
+    font-weight:100;
+    background-image: linear-gradient(rgba(125, 150, 224, 0.7),rgba(125, 150, 224, 0.7)),url("/assets/bag.jpg");
+    background-image: no-repeat; 
+    padding-bottom: 1px;  
+  }
+header .gnb{
+    height:90px;
+    width:990px;
+    margin:auto
+    ;color:#707070;
+    padding-top:34px
+  }
+
+  header .gnb p{
+    float:right;
+    width:auto;
+    max-width:400px;
+    word-break:break-all
+  }
+  
+  header .banner .nLogo img{
+    border-radius: 50%;
+      height: 50px;
+      margin-top: 4px;
+      margin-left: -1200px;
+  }
+  
+  header .banner{
+    background:rgb(10, 174, 224);height:60px;color:#fff;text-align:center
+  }
+  header .banner .title{
+    font-size:16px
+  }
+  
+  header{
+    margin-bottom:20px
+  }
+  header .banner .title{
+   margin-top: -34px;
+  }
+  
+  .container{
+    width:990px;
+    margin:0 auto;
+    text-align:center;
+    color:#707070
+  }
+  .container .box{
+    display:inline-block;
+    width:304px;
+    padding:50px;
+    text-align:center
+  }
+  .container .box .icon img{
+    font-family:ResmanFont;
+    margin:auto auto 25px;
+    cursor:pointer;
+    color:rgb(39, 212, 117);
+    display:inline-block;
+    overflow:hidden;
+    vertical-align:bottom
+  }
+  .container .box .icon.fresher img{
+    border-radius: 50%;
+    font-size:130px;
+    width:120px;
+    line-height:130px
+  }
+  .container .box .icon.experience img{
+    border-radius: 50%;
+    font-size:130px;
+    width:120px;
+    line-height:130px
+  }
+  .container .box .action-btn{
+    color:#FFF;
+    background-color: rgb(10, 174, 224);
+    border:none;display:inline-block;
+    font-size:16px;
+    font-weight:400;
+    line-height:1.42857143;
+    text-align:center;
+    vertical-align:middle;
+    cursor:pointer;
+    overflow:hidden;
+    outline:0;
+    padding:15px;
+    width:100%
+  }
+  
+  .container .box .description{
+    padding-top:10px;
+  }
+ 
+  .container .job-text{
+    width:435px;
+    margin:auto;
+  }
+  .container .info-text .numbers{
+    font-size:17px;
+  }
+  .container .info-text .numbers i{
+    border-right:1px solid #707070;
+    margin:0 15px;
+  }
+  .container .info-text .head{
+    margin-top:25px;
+    font-weight:400;
+  }
+  .container .info-text ul{
+    list-style:none;
+    display:inline-block;
+  }
+  .container .info-text ul li{
+    text-align:left;
+    padding:4px 0;
+  }
+
+  
+  footer{
+    text-align:center;
+    font-size:12px;
+    
+    margin-top:65px}
+  footer a{
+    color:rgb(69, 22, 238);
+    display:inline-block;
+    font-size:15px;
+    line-height:1;
+    padding:0 10px;
+    border-left:solid 1px #A7A7A7
+  }
+  footer a:hover{
+    color:rgb(175, 221, 10)
+  }
+  footer a:first-child{
+    border-left:none
+  }
+  footer p{
+    font-size: 12px;
+    color:rgb(194, 21, 142);
+    margin-top:5px
+  }

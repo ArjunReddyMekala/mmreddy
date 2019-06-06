@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="/main"><img src="/assets/logoo.png"></a>
+
+    </div>
+
+    <ul class="nav navbar-nav" routerLinkActive="active">
+
+      <li *ngIf="!isLoggedIn" class="nav-item">
+        <a class="nav-link" routerLink="/auth/login" href="#"><b>Login</b></a>
+      </li>
+
+    </ul>
+
+    <ul class="nav navbar-nav" routerLinkActive="active">
+
+      <div class="btn-group mr-3" *ngIf="isLoggedIn">
+        <!--------------------------------------------------
+      <button type="button" class="btn btn-primary"><b>Welcome</b></button>
+      <button routerLink='/candidate' class="dropdown-item">Profile</button>
+
+     <li class="nav-item"><a class="nav-link" routerLink="/home1"><b>Logout</b></a></li>
+-------------->
+
+
+        <div ngbDropdown class="d-inline-block">
+          <button class="btn btn-primary" type="button" id="dropdownMenuButton">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Arjun Reddy</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownMenuButton" id="ma">
+              <i class="fa fa-home" aria-hidden="true"></i>
+            <button routerLink='/candidate' class="dropdown-item" style="color:rgb(14, 214, 14)">Profile</button>
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <button routerLink='/accountsettings' class="dropdown-item" style="color:rgb(14, 214, 14)">Account Settings</button>
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+            <button routerLink='/home1' class="dropdown-item" style="color:rgb(14, 214, 14)" >Logout</button>
+
+          </div>
+        </div>
+
+      </div>
+
+    </ul>
+
+  </div>
+
+</nav>

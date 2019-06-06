@@ -1,0 +1,434 @@
+
+<div class="container">
+  <ngb-tabset #t="ngbTabset">
+    <ngb-tab id="tab-selectbyid1" title="Personal Details">
+      <ng-template ngbTabContent>
+
+        <div class="container register1">
+          <form [formGroup]="reactiveForm">
+
+            <div class="row1">
+              <div class="col-md-12">
+
+                <div class="row register1-form">   
+                
+                <div class="col-md-4">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" class="form-control" placeholder="Change Your Name" name="name"
+                    formControlName="name">
+
+                  <div
+                    *ngIf="reactiveForm.controls.name.errors && (reactiveForm.controls.name.touched || reactiveForm.controls.name.dirty)"
+                    style="color: blue">
+                    <div *ngIf="reactiveForm.hasError('pattern','name')"> Name is invalid</div>
+                    <div *ngIf="reactiveForm.hasError('minlength','name')"> Name is must be 3 min</div>
+
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="address">Address</label>
+                  <input type="text" id="address" name="address" class="form-control" placeholder="Change Your address"
+                    formControlName="address">
+                  <div
+                    *ngIf="reactiveForm.controls.address.errors && (reactiveForm.controls.address.touched || reactiveForm.controls.address.touched)"
+                    style="color:blue">
+                  </div>
+
+                </div>
+
+              </div>
+     
+
+             <div class="col-md-4">
+                <div class="form-group">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="Text" id="phoneNumber" class="form-control" name="phoneNumber"
+                    placeholder="Change Your Number" formControlName="phoneNumber">
+                  <div
+                    *ngIf="reactiveForm.controls.phoneNumber.errors && (reactiveForm.controls.phoneNumber.touched || reactiveForm.controls.phoneNumber.dirty)"
+                    style="color:blue">
+                    <div *ngIf="reactiveForm.hasError('pattern','phoneNumber')"> phoneNumber is invalid</div>
+
+                  </div>
+
+                </div>
+             </div>
+
+                </div>
+
+                <div class="row register2-form">
+
+                <div class="col-md-12">
+                  <div class="form-group" id="anydegree" style="color:rgb(240, 15, 191)">
+                    <label>Any PostGraduation *</label>
+                  </div>
+                </div>
+
+
+                <div class="col-md-2">
+                  <div class="form-group">
+                    <label for="ugCourse"> Course:</label>
+                    <input type="text" class="form-control" id="ugCourse" placeholder="UG" name="ugCourse"
+                      formControlName="ugCourse">
+                    <div
+                      *ngIf="reactiveForm.controls.ugCourse.errors && (reactiveForm.controls.ugCourse.touched || reactiveForm.controls.ugCourse.dirty)"
+                      style="color:red">
+
+                      <div *ngIf="reactiveForm.hasError('pattern','ugCourse')">
+                        Course is Invalid Format
+                      </div>
+
+
+                    </div>
+                  </div>
+
+                </div>
+
+
+
+                <div class="col-md-4">
+
+                  <div class="form-group">
+                    <label for="ugSpecialization"> Speciliazation:</label>
+                    <input type="text" class="form-control" id="ugSpecialization" name="ugSpecialization"
+                      formControlName="ugSpecialization">
+                    <div
+                      *ngIf="reactiveForm.controls.ugSpecialization.errors && (reactiveForm.controls.ugSpecialization.touched || reactiveForm.controls.ugSpecialization.dirty)"
+                      style="color:red">
+
+                      <div *ngIf="reactiveForm.hasError('pattern','ugSpecialization')">
+                        Speciliazation is Invalid Format
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+
+                <div class="col-md-4">
+
+                  <div class="form-group">
+                    <label for="university_or_institute"> University:</label>
+                    <input type="text" class="form-control" id="university_or_institute" name="university_or_institute"
+                      formControlName="university_or_institute">
+                    <div
+                      *ngIf="reactiveForm.controls.university_or_institute.errors && (reactiveForm.controls.university_or_institute.touched || reactiveForm.controls.university_or_institute.dirty)"
+                      style="color:red">
+
+                      <div *ngIf="reactiveForm.hasError('pattern','university_or_institute')">
+                        university is Invalid Format
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+
+                  <div class="form-group">
+                    <label> courseType * </label> <br>
+                    <label for="courseType">Full Time</label>
+                    <input class="radio1" type="radio" value="Full Time" formControlName="courseType">
+                    <label for="courseType">Part Time</label>
+                    <input class="radio1" type="radio" value="Part Time" formControlName="courseType">
+                    <label for="courseType">Correspondece</label>
+                    <input class="radio1" type="radio" value="Correspondece" formControlName="courseType">
+                  </div>
+
+
+
+                </div>
+
+
+
+
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="passed_out_year"> Passed Out year:</label>
+                    <input type="number" class="form-control" id="passed_out_year" name="passed_out_year"
+                      formControlName="passed_out_year">
+                    <div
+                      *ngIf="reactiveForm.controls.passed_out_year.errors && (reactiveForm.controls.passed_out_year.touched || reactiveForm.controls.passed_out_year.dirty)"
+                      style="color:red">
+
+                      <div *ngIf="reactiveForm.hasError('pattern','passed_out_year')">
+                        university is Invalid Format
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                  <div class="form-group">
+                    <label>Grading System *</label><br>
+                    <select class="form-control" id="gradingSystem" formControlName="gradingSystem">
+                      <option *ngFor="let gradingSystem of gradings" [value]="gradingSystem.id">{{gradingSystem.name}}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="marks"> Marks:</label>
+                    <input type="text" class="form-control" id="marks" name="marks" formControlName="marks">
+                    <div
+                      *ngIf="reactiveForm.controls.marks.errors && (reactiveForm.controls.marks.touched || reactiveForm.controls.marks.dirty)"
+                      style="color:red">
+                      <div *ngIf="reactiveForm.hasError('pattern','marks')">
+                        Marks is Invalid Format
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                  <div class="form-group" id="sa">
+                    <label for="file">Upload Certificate</label>
+                    <input type="file" class="form-control" (change)="onSelectFileGraduation($event)"
+                      style="height:100%">
+                  </div>
+
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label> Skills </label> <br>
+                    <input type="text" placeholder="Enter Your Skills" class="form-control" id="skills" name="skills"
+                      formControlName="skills">
+                    <div
+                      *ngIf="reactiveForm.controls.skills.errors && (reactiveForm.controls.skills.touched || reactiveForm.controls.skills.dirty)"
+                      style="color:red">
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+
+
+
+                <div class="col-md-5">
+                  <div class="form-group">
+                    <label for="file">Upload Skills Certificate</label>
+                    <input type="file" class="form-control" (change)="onSelectFileSkills($event)" style="height:100%">
+                  </div>
+
+                </div>
+
+                </div>
+
+
+                <p>
+                  <button class="btn btn-primary" (click)="t.select('tab-selectbyid2')">Next</button>
+                </p>
+
+
+
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </ng-template>
+    </ngb-tab>
+
+
+
+
+
+
+
+
+
+
+
+    <ngb-tab id="tab-selectbyid2">
+      <ng-template ngbTabTitle>Proffesional Details</ng-template>
+      <ng-template ngbTabContent>
+
+
+
+
+        <div class="container register2">
+          <form [formGroup]="reactiveForm">
+
+            <div class="row">
+              <div class="col-md-12">
+
+                  <div class="row register2-form">
+
+                    <div class="col-md-12">
+                  <div class="form-group" id="experience_category1" style="color:rgb(240, 15, 191)">
+                      <label>Experience *</label>
+                    </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="form-group">
+                          <input type="number" id="total_experience_in_years" name="total_experience_in_years"
+                            class="form-control" placeholder="Years" formControlName="total_experience_in_years">
+    
+    
+                          <div
+                            *ngIf="reactiveForm.controls.total_experience_in_years.errors && 
+                                  (reactiveForm.controls.total_experience_in_years.touched || reactiveForm.controls.total_experience_in_years.dirty)">
+                            <div *ngIf="reactiveForm.hasError('required','total_experience_in_years')">required</div>
+    
+                          </div>
+                        </div>
+                      </div>
+    
+                
+    
+                      <div class="col-md-5">
+                        <div class="form-group">
+                          <input type="number" id="total_experience_in_months" name="total_experience_in_months"
+                            class="form-control" placeholder="Total Months" formControlName="total_experience_in_months">
+                          <div
+                            *ngIf="reactiveForm.controls.total_experience_in_months.errors && 
+                               (reactiveForm.controls.total_experience_in_months.touched || reactiveForm.controls.total_experience_in_months.dirty)">
+                            <div *ngIf="reactiveForm.hasError('required','total_experience_in_months')">Required</div>
+                          </div>
+    
+                        </div>
+                      </div>
+
+
+
+
+
+                      <div class="col-md-5">
+                          <div class="form-group">
+                             <input type="number" id="relevant_experience_in_years" name="relevant_experience_in_years"
+                                     class="form-control" placeholder="relevant_experience_in_years" formControlName="relevant_experience_in_years">
+                                     <div
+                                     *ngIf="reactiveForm.controls.relevant_experience_in_years.errors && 
+                                        (reactiveForm.controls.relevant_experience_in_years.touched || reactiveForm.controls.relevant_experience_in_years.dirty)">
+                                     <div *ngIf="reactiveForm.hasError('required','relevant_experience_in_years')"> Required</div>
+                                   </div>
+         
+                          </div>
+                        </div>
+         
+         
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <input type="number" id="relevant_experience_in_months" name="relevant_experience_in_months" class="form-control"
+                            placeholder="relevant_experience_in_months" formControlName="relevant_experience_in_months">
+                            <div *ngIf="reactiveForm.controls.relevant_experience_in_months.errors && 
+                            (reactiveForm.controls.relevant_experience_in_months.touched || reactiveForm.controls.relevant_experience_in_months.dirty)">
+                            <div *ngIf="reactiveForm.hasError('required','relevant_experience_in_months')">Required</div>
+         
+                            </div>
+         
+                          </div>
+                        </div>
+
+
+
+
+                        <div class="col-md-5">
+                            <div class="form-group">
+                              <input type="text" id="current_ctc" name="current_ctc" class="form-control" placeholder="current_ctc"
+                              formControlName="current_ctc">
+                              <div *ngIf="reactiveForm.controls.current_ctc.errors && 
+                              (reactiveForm.controls.current_ctc.touched || reactiveForm.controls.current_ctc.dirty)">
+                                <div *ngIf="reactiveForm.hasError('required','current_ctc')"> Required </div>
+                              </div>
+    
+                            </div>
+                          </div>
+    
+                          <div class="col-md-5">
+                            <div class="form-group">
+                              <input type="text" id="noticePeriod_in_days" name="noticePeriod_in_days" class="form-control" placeholder="noticePeriod_in_days"
+                              formControlName="noticePeriod_in_days">
+                              <div *ngIf="reactiveForm.controls.noticePeriod_in_days.errors && 
+                              (reactiveForm.controls.noticePeriod_in_days.touched || reactiveForm.controls.noticePeriod_in_days.dirty)">
+                              <div *ngIf="reactiveForm.hasError('required','noticePeriod_in_days')"> Required</div>
+    
+                              </div>
+    
+                            </div>
+                          </div>
+    
+
+             </div>
+
+              </div>
+
+              
+              <p>
+                <button class="btn btn-primary" (click)="t.select('tab-selectbyid1')">Previous</button>
+              </p>
+      
+              <p>
+                <button class="btn btn-primary" (click)="t.select('tab-selectbyid3')">Next</button>
+              </p>
+
+
+            </div>
+          </form>
+        </div>
+
+
+      </ng-template>
+
+    </ngb-tab>
+
+    <ngb-tab id="tab-selectbyid3">
+      <ng-template ngbTabTitle>Updated Resume</ng-template>
+      <ng-template ngbTabContent>
+
+        <div class="container register3">
+          <form [formGroup]="reactiveForm">
+
+            <div class="row1">
+              <div class="col-md-12">
+
+
+                  <div class="form-group">
+                      <label for="file">Upload Resume</label>
+                      <input type="file" class="form-control" (change)="onSelectFile($event)" style="height:100%">
+                    </div>
+
+
+
+                </div>
+
+                <p>
+                  <button class="btn btn-primary" (click)="t.select('tab-selectbyid2')">Previous</button>
+                </p>
+                
+                </div>
+                </form>
+                </div>
+
+      
+
+      </ng-template>
+    </ngb-tab>
+
+  </ngb-tabset>
+</div>

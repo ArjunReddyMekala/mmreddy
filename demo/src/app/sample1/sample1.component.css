@@ -1,0 +1,145 @@
+.container{
+  margin-top: 20px;
+  padding-top: 30px;
+  background-color: whitesmoke;
+  padding-bottom: 30px;
+}
+.card{
+  background-color: blue;
+  height: 240px;
+  margin-left: 55px;
+    width: 1000px;
+}
+.row img{
+    margin-top: 25px;
+    margin-left: 16px;
+    height: 73px;
+    width: 73px;
+    border-radius: 100%;
+}
+.row i{
+  color: white;
+}
+/* ----------- */
+.profile-image-style {
+  border-radius: 100%;
+  width: 89px;
+  height: 90px;
+}
+.id h6{
+  padding-top: 11px;
+  padding-left: 13px;
+  color: white;
+}
+
+img {
+  vertical-align: middle;
+}
+.edit-image-upload {
+  position: absolute;
+  margin-left: 59px;
+  margin-top: -69px;
+  cursor: pointer;
+  background: blue;
+  border-radius: 12px;
+  padding: 2px 5px;
+}
+
+.name{
+  padding-top: 30px;
+  margin-left: -75px;
+}
+.name h5{
+  padding-left: 40px;
+  color: white;
+ 
+}
+.name i{
+  padding-left: 6px;
+}
+.name .education i{
+  padding-left: 34px;
+  padding-right: 2px;
+}
+.name .education h6{
+  color: aliceblue;
+}
+.name .yearofpass i{
+  padding-left: 35px;
+  padding-right: 6px;
+}
+.name .yearofpass h6{
+  color: aliceblue;
+}
+.name .college i{
+  padding-left: 35px;
+  padding-right: 5px;
+}
+.name .college h6{
+  color: aliceblue;
+}
+
+.name .location i{
+  padding-left: 40px;
+  padding-right: 10px;
+}
+.name .location h6{
+  color: aliceblue;
+}
+.status h6{
+color: white;
+
+}
+#profilestatus{
+  height: 16px;
+}
+.progress-bar{
+ width: 70%;
+ background-color: indianred;
+}
+.complete{
+  color: white;
+  float: right;
+}
+.card1{
+  background-color: cornflowerblue;
+  height: 152px;
+  width: 265px;
+  margin-top: 20px;
+  color: white;
+}
+.card1 h6{
+  padding-left: 14px;
+  padding-top: 10px;
+}
+.card1 p{
+  padding-left: 15px;
+  padding-top: 2px;
+}
+
+.card1 a{
+  color: firebrick;
+  padding-left: 95px;
+}
+/* ------------------ */
+
+.card2{
+  margin-top: 20px;
+
+  background-color: darkgray;
+  height: 100px;
+  margin-left: 55px;
+    width: 1000px;
+}
+.para{
+  padding-left: 75px;
+  padding-top: 10px;
+  color: white;
+}
+.premium .badge{
+ float: right;
+ margin-right: 170px;
+ height: 35px;
+ width: 235px;
+ padding-top: 9px;
+}

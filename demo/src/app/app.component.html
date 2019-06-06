@@ -1,0 +1,31 @@
+<!-- <app-main></app-main> -->
+<!----------------------------------------------------
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">SahiUdhyog</a>
+      </div>
+      <ul class="nav navbar-nav" routerLinkActive="active">
+       <li *ngIf="!isLoggedIn" class="nav-item">
+        <a class="nav-link" routerLink="auth/login" href="#"><b>Login</b></a>
+      </li>
+    </ul>
+  
+    <ul class="nav navbar-nav" routerLinkActive="active">
+       <div class="btn-group mr-3" *ngIf="isLoggedIn">
+        <button type="button" class="btn btn-primary"><b>Welcome</b></button>
+        <button routerLink='/jobseeker' class="dropdown-item">Profile</button>
+       <li class="nav-item"><a class="nav-link" routerLink="home1"><b>Logout</b></a></li>
+      </div>
+    </ul> 
+       
+    </div>
+  </nav>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+
+    ------------------------------------>
+  
+  <router-outlet></router-outlet>
+ 
